@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdio.h>
 uint32_t func(uint32_t x)
 {
     uint32_t n = x;
@@ -9,7 +10,13 @@ uint32_t func(uint32_t x)
     n = ((n & 0xaaaaaaaa) >> 1 ) | ((n& 0x55555555) << 1);
     return n;
 }
+int32_t abs(int32_t x)
+{
+    int32_t mask = (x >> 31);
+    return (x+mask)^mask;
+}
 int main()
 {
+    printf("%d",abs(-2147483648));
     return 0 ;
 }
