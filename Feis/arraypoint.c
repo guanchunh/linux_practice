@@ -3,7 +3,7 @@
 void print(int (*q)[3])
 {
     int i;
-    for ( i = 0; i < 3 ; i++)
+    for ( i = 0; i < sizeof(*q)/sizeof((*q)[0]) ; i++)
     {
         printf("%d",(*q)[i]);
     }
