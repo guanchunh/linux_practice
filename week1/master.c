@@ -3,7 +3,7 @@ main()
 
 }
 
-int x()
+short int x()
 {
     return main();
 }
