@@ -1,9 +1,15 @@
+// declare
+struct GraphicsObject;
+
+// an instance  / object from GraphicsObject
+struct GraphicsObject x;
+
 int main()
 {
     char A;
     char *ptrA = &A;
     char *ptrX = ptrA;
-    char C[]; //compiler error
+    
     ptrA++;
     ptrA--;
 
