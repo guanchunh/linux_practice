@@ -2,8 +2,8 @@
 struct GraphicsObject;
 
 // an instance  / object from GraphicsObject
-struct GraphicsObject x;
-
+//struct GraphicsObject x;
+struct GraphicsObject *x;
 int main()
 {
     char A;
