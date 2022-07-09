@@ -7,5 +7,5 @@ int main()
     ptrA++;
     ptrA--;
 
-    ptrX = ptrA * 1; //compilr error
+    ptrX = ptrA  + ((int)ptrA * 1);
 }
